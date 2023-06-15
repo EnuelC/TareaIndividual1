@@ -19,7 +19,7 @@ public class App
        	opcion = leerEnteroTeclado("");
        	Double resultado = null;
        	if(opcion == 1) {
-       		resultado = circulo(leerDecimalTeclado("Escriba el radio del círculo: "),leerDecimalTeclado("Introduzca cualquier número y luego presione la tecla ENTER"));
+       		resultado = circulo(leerDecimalTeclado("Escriba el radio del círculo:  "));
        	}else if(opcion == 2) {
        		resultado = cuadrado(leerDecimalTeclado("Escriba el número del lado #1: "),leerDecimalTeclado("Escriba el número del lado #2: "));
 
@@ -58,19 +58,22 @@ public class App
 		System.out.println("3. RECTÁNGULOS");
 		System.out.println("4. TRIÁNGULOS");
 		System.out.println("5. SALIR");
-		System.out.println("ELIJA UNA OPCIÓN DEL MENÚ:");
+		System.out.println("ELIJA UNA OPCIÓN DEL MENÚ: ");
+		
 	}
 
-    
-	
 
 
-	public static double circulo(double pi, double radio) { 
-        		double radio2 = radio*radio;
-        		double pi2 = 3.1415;
-			
+	public static double circulo(double radio) { 
+        	
+        		 double area;
+        		 double pi = Math.PI; 
+        		 
+        		 area = pi * Math.pow(radio, 2);
         		
-        		return pi2*radio2;
+        		return area;
+		
+
         		
 	} 
 	  

@@ -19,17 +19,17 @@ public class AppTest
 	
 	@Test
 	public void testCirculo1() {
-		assertEquals(App.circulo(3.1415,1.5), 7.0683, 0.0001);
+		assertEquals(App.circulo(1.5), 7.0685, 0.0001);
 	}
 	
 	@Test
 	public void testCirculo2() {
-		assertEquals(App.circulo(3.1415,-5.3), 88.2447, 0.0001);
+		assertEquals(App.circulo(-5.3), 88.2473, 0.0001);
 	}
 	
 	@Test
 	public void testCirculo3() {
-		assertEquals(App.circulo(-3.1415,-3.0), 28.2735, 0.0001);
+		assertEquals(App.circulo(-3.0), 28.2743, 0.0001);
 	}
 	
 	@Test
