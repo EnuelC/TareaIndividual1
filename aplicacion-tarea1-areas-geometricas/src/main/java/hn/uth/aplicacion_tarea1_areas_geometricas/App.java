@@ -52,6 +52,7 @@ public class App
 	}
 
 	private static void imprimirMenu() {
+		
 		System.out.println("*** CÁLCULO DE ÁREAS DE FIGURAS GEOMÉTRICAS ***");
 		System.out.println("1. CÍRCULOS");
 		System.out.println("2. CUADRADOS");
